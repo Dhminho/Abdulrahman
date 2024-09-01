@@ -1,70 +1,48 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تهنئة عيد الفطر</title>
+    <title>Login Form</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #2a00a2; /* اللون الأزرق البنفسجي للخلفية */
-            color: #fff;
-            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url('https://i.ibb.co/vk0zc2c/BACK.png'); /* رابط الصورة الخلفية */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
+            background-color: #2a00a2; /* اللون الأزرق البنفسجي المستخدم في الخلفية */
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .container {
-            background-color: rgba(42, 0, 162, 0.8); /* لون الخلفية مع شفافية */
-            padding: 20px;
-            border-radius: 10px;
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .logo {
-            margin-bottom: 20px;
+        .input-field {
+            width: 300px;
+            height: 40px;
+            margin: 15px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 20px; /* لجعل الحواف مستديرة */
+            outline: none;
+            text-align: center;
+            font-size: 16px;
         }
 
-        .greeting {
-            font-size: 36px;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-
-        .message {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .footer {
-            font-size: 20px;
-            color: #ff7f27; /* اللون البرتقالي */
-            font-weight: bold;
+        .input-field::placeholder {
+            color: #999;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="https://i.ibb.co/XSry3rs/LOGO.png" alt="DIS Academy Logo" width="150"> <!-- رابط الشعار -->
-        </div>
-        <div class="greeting">
-            عيد فطر سعيد
-        </div>
-        <div class="message">
-            أهنئكم بقدوم عيد الفطر المبارك <br>
-            أعاده علينا وعليكم بالخير والبركات
-        </div>
-        <div class="footer">
-            وكل عام وأنتم بخير
-        </div>
+    <div class="login-container">
+        <input type="text" class="input-field" placeholder="username">
+        <input type="password" class="input-field" placeholder="password">
     </div>
 </body>
 </html>
